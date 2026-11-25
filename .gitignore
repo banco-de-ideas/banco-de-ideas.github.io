@@ -1,0 +1,22 @@
+# Secretos
+.env
+.env.*
+
+# Datos de personas
+*.csv
+*.xlsx
+
+# Dependencias
+node_modules/
+
+# Respaldos y exportaciones de la base
+*.sql
+*.dump
+*.backup
+*.bak
+
+# Registros y archivos del sistema
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini

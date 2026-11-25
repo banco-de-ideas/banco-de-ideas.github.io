@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://iuxpmvghjwaltvyewomn.supabase.co; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Banco de Ideas</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/estilos.css?v=202611250528">
+  <script src="vendor/supabase.js?v=202611250528" defer></script>
+  <script type="module" src="js/app.js?v=202611250528"></script>
+</head>
+<body>
+  <a class="saltar" id="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="barra" id="barra" hidden>
+    <div class="barra__marca">
+      <img class="barra__logo" src="img/logo.png" alt="Avanz" width="412" height="214">
+      <span class="barra__nombre">Banco de Ideas</span>
+    </div>
+    <nav class="barra__nav" id="nav" aria-label="Secciones"></nav>
+    <details class="usuario" id="usuario">
+      <summary class="usuario__resumen">
+        <span class="usuario__nombre" id="usuario-nombre"></span>
+        <span class="usuario__avatar" id="usuario-iniciales" aria-hidden="true"></span>
+        <span class="solo-lectores">: opciones de la cuenta</span>
+      </summary>
+      <div class="usuario__menu">
+        <p class="usuario__rol" id="usuario-rol"></p>
+        <a class="usuario__opcion" href="#/clave" data-ruta="/clave">Cambiar contraseña</a>
+        <button type="button" class="usuario__opcion usuario__opcion--salir" id="salir">Salir</button>
+      </div>
+    </details>
+  </header>
+
+  <main id="contenido" class="contenido" tabindex="-1">
+    <p class="cargando">Cargando…</p>
+    <noscript><p>El Banco de Ideas necesita JavaScript. Actívalo en tu navegador y recarga la página.</p></noscript>
+  </main>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+</body>
+</html>
